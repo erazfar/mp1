@@ -1,18 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MP1 Starter</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Ehsan MP1</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <div class="test"> My name is Anthony.</div>
+	<script src="lib/jquery-2.1.3.min/index.js"></script>
+	<script src="js/script.js"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
+
+	<header class = "navbar"></header>
+	<div class="topSpace"></div>
+	<div class="category">
+		<div class="homeSection" id="homeScroll">
+			<h1>This is the home section</h1>
+			<div class="center" id="carousel">
+				<ul>
+				<li><img src="http://www.my-html-codes.com/images/fish.jpg" alt="Fish" /></li>
+				<li><img src="http://www.my-html-codes.com/images/elephant.jpg" alt="Elephant" /></li>
+				<li><img src="http://www.my-html-codes.com/images/giraffe.jpg" alt="Giraffe" /></li>
+				<li><img src="http://www.my-html-codes.com/images/penguins.jpg" alt="Penguins" /></li>
+				</ul>
+			</div>
+			
+			<button class="center myButton" onclick="scrollPic()">SCROLL</button>
+				<p class="columns">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		</div>
+
+<a href="#openModal"><i class="fa fa-arrow-right">More Info</i></a>
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>More Lorem Ipsum</h2>
+	</div>
+</div>
 
 
-  <script src="lib/jquery-2.1.3.min/index.js"></script>
-  <script src="js/script.js"></script>
-  <script src="http://localhost:35729/livereload.js"></script>
+	</div>
+
+	<div class="category" id="portfolioScroll">
+		<div class="portfolioSection fix mountain">
+			<h1>This is the portfolio</h1>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		</div>
+	</div>
+
+	<div class="category">
+		<div class = "aboutSection" id ="aboutScroll">
+			<h1>This is the about</h1>
+
+		</div>
+	</div>
+
+	<div class="category">
+		<div class = "contactSection" id="contactScroll">
+			<h1>This is the contact</h1>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		<video class="center greydout" autoplay="autoplay" loop muted="muted" poster="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/home/OneTouchCity_Frame1_dark.jpg" width="1600px" height="900px" style="height: 565px; width: auto; visibility: visible;">
+	        <source src="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/videos/OneTouchCity.mp4" type="video/mp4">
+	        <source src="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/videos/OneTouchCity.webm" type="video/webm">
+    	</video>
+		</div>
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-google-plus"></i>
+		<i class="fa fa-linkedin"></i>
+		<i class="fa fa-reddit"></i>
+		<p>Share on social media! </p>
+	</div>
+
 </body>
 </html>
