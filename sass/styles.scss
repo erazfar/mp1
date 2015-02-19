@@ -14,8 +14,33 @@ h1 {
 	font-size: 35px;
 }
 
+h2{
+	font-size: 30px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #eee
+}
+
+h3{
+	font-size: 30px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:black;
+}
+p {
+	color: #fff;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+
+}
 body {
-	background-color: #ffe;
+background:
+	linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-color: #131313;
+	background-size: 20px 20px;
 }
 
 div {
@@ -34,6 +59,10 @@ div {
 	}
 }
 
+.centerText {
+	text-align: center;
+}
+
 .modalDialog {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
@@ -41,8 +70,7 @@ div {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
+	background: rgba(1,1,1,0.8);
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
@@ -62,14 +90,11 @@ div {
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
 }
 
 .close {
 	background: #606061;
-	color: #FFFFFF;
+	color: #aaaaaa;
 	line-height: 25px;
 	position: absolute;
 	right: -12px;
@@ -89,13 +114,16 @@ div {
 .close:hover { background: #00d9ff; }
 
 .mountain{
-	background-image: url("http://www.hdwallpapers.in/walls/blue_mountains_dual_monitor-other.jpg");
+	background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2013/11/14/175001/c2e676141e59f9e537eb5a32b272b4b9.jpg");
+	height: 100vh;
+	min-width: 1200px;
 }
+
 
 .greydout {
   -webkit-opacity: 0.25;
   -moz-opacity: 0.25;
-  opacity: 0.1;
+  opacity: 1;
   -webkit-transition: all 3s ease;
   -moz-transition: all 3s ease;
   -ms-transition: all 3s ease;
@@ -106,7 +134,7 @@ div {
 .greydout:hover {
 	-webkit-opacity: 1;
 	-moz-opacity: 1;
-	opacity: 1;
+	opacity: .1;
 }
 
 .columns {
@@ -197,13 +225,13 @@ div {
 
 .category {
 	height: 100vh;
-	width: 100vw - 5;
+	width: 100vw - 2;
 	position: relative;
 	padding-top: 10px;
-    border: 2px solid;
-    border-radius: 25px;
-    margin-left: 10px;
-    margin-top: 10px;
+	border: 2px solid;
+	border-radius: 25px;
+	margin-left: 10px;
+	margin-top: 10px;
 	.homeSection {
 	}
 
@@ -223,20 +251,55 @@ div {
 }
 
 #carousel {
-	width: 480px;
+	width: 950px;
 	overflow:hidden;
 }
 
 #carousel ul {
-	width: 1920px;
+	width: 4000px;
 	padding: 0;
 	margin: 0;
 }
 
 #carousel ul li {
-	width:480px;
+	width: 1000px;
 	text-align: center;
-	height: 280px;
+	height: 400px;
 	list-style: none;
 	float:	left;
+}
+
+#container {
+	width: 1000px;
+	margin-left: auto ;
+	margin-right: auto ;
+}
+#colOne {
+	float:left;
+	width: 300px;
+}
+
+#colTwo {
+	float:left;
+	width: 400px;
+}
+
+#colThree{
+	float:right;
+	width: 300px;
+}
+
+.imageFormatting {
+	margin: 5px;
+	padding: 5px;
+	border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0)) 1 100%;
+	height: auto;
+	width: auto;
+	float: left;
+	text-align: center;
+	background-position: center;
+	margin-left: 40px;
+
 }
